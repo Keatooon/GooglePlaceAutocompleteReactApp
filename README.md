@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Google Place Autocomplete React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple single-page React application that uses Google Place Autocomplete to find places and display them on a map. It incorporates Redux for state management, Material-UI for the user interface, and follows best practices for code organization and scalability.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Autocomplete search input that fetches place suggestions from the Google Places API.
+- Display of search results on list.
+- Redux integration for state management.
+- Material-UI components for a visually appealing user interface.
+- Redux-Observable Epics for handling asynchronous actions.
+- Higher-Order Components (HOCs) for additional functionality and logging.
+- Functional programming principles for improved code maintainability.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```shell
+   git clone <repository-url>
 
-### `npm test`
+2. Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```shell
+   npm install
 
-### `npm run build`
+3. Obtain a Google Places API key. Replace 'YOUR_API_KEY' in src/epics/autocompleteEpic.js with your actual API key.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Start the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```shell
+   npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Open the application in your browser:
 
-### `npm run eject`
+    ```shell
+    http://localhost:3000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Folder Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- src/components: Contains the main components of the application.
+- src/epics: Includes the Redux-Observable epics for handling asynchronous actions.
+- src/hoc: Contains Higher-Order Components for additional functionality.
+- src/redux: Holds the Redux store, actions, and reducers for state management.
+- src/index.js: Entry point of the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
+This project is licensed under the MIT License.
 
-## Learn More
+Feel free to customize the content of the Readme.md file based on your project's specific details and requirements.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
